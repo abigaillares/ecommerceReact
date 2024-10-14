@@ -1,14 +1,11 @@
-import React from 'react'
-import { TbShoppingCartHeart } from "react-icons/tb";
+import { PiShoppingCartBold } from "react-icons/pi";
 
 const CartWidget = () => {
   return (
-    <div className='cartwidget'>
-        <TbShoppingCartHeart size={35}/>
-        <p>1</p>
+    <div className="cartwidget">
+      <PiShoppingCartBold className="icon-cartwidget" />
+      <p className="number-cartwidget">1</p>
     </div>
-    
   )
 }
-
 export default CartWidget
