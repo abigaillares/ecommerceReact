@@ -1,6 +1,8 @@
 import CartWidget from "./CartWidget"
-import { FaCouch } from 'react-icons/fa';
+import { GrHome } from "react-icons/gr";
 import { Link } from "react-router-dom"
+
+
 import "./navbar.css"
 
 const NavBar = () => {
@@ -10,19 +12,22 @@ const NavBar = () => {
 
       <ul className="categories">
         <li className="category">
-          <Link className="linkc" to="/category/mesa">Mesas</Link>
+          <Link to="/category/mesa" className="text-link">mesas</Link>
         </li>
         <li className="category">
-          <Link className="linkc" to="/category/sillas">Sillas</Link>
+          <Link to="/category/sillas" className="text-link" >sillas</Link>
         </li>
         <li className="category">
-          <Link className="linkc" to="/category/escritorio">Escritorios</Link>
+          <Link to="/category/Living" className="text-link">living</Link>
+        </li>
+        <li className="category">
+          <Link to="/category/escritorio" className="text-link">escritorios</Link>
         </li>
       </ul>
 
-      <Link to="/" className="linkc brand primary-font-color">
-        <FaCouch className="icon-brand" />
-        <p className="title-brand linkc">Nordica Store</p>
+      <Link to="/" className="brand primary-font-color">
+        <GrHome />
+        <p className="title-brand ">Nordica Store</p>
       </Link>
 
       <CartWidget />
